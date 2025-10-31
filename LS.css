@@ -1,80 +1,59 @@
+@import url('https://fonts.googleapis/css?family=Lato:300,400&display=swap');
+
 * { 
+box-sizing:border-box;
 margin: 0;
 padding: 0;
-}
-header,nav,main,aside,footer {
-background-color: #7A85C1;
-
+font-family: 'lato' , sans-serif ;
 }
 body {
-font-family: ans-serif;
-text-align: center;
-background-color: #3B38A0;
-color: #b2b0e8;
-}
-header {
-background-color: #1A2A80;;
-}
-nav {
+background: linear-gradient(to right, #d4d3dd,#efefbb) ;
 display: flex;
-justify-content: space-around;
-align-items: center;
-font-family: Arial, Helvetica, sans-serif;
-background-color: #1A2A80;
-height: 8vh;
-}
-main {
-background: url(./img/pokemon.jpeg) no-repeat
-center center;
-background-size: cover;
-height: 92vh;
-}
-a {
-color: #fff;
-text-decoration:none ;
-transition: 0.3s;
-}
-a:hover {
- opacity: 0.7;
-}
-.logo {
-font-size: 24px;
-text-transform: uppercase;
-letter-spacing: 4px;
-}
-.nav-list {
-list-style: none;
-display: flex;
-}
-.nav-list li {
- letter-spacing: 3px;
- margin-left: 32px;
-}
-.mobile-menu {
-display: flex;
-cursor: pointer;
-}
-.mobile-menu div {
-width: 32px;
-height: 2px;
-background: #fff;
-margin: 8px;
-}
-@media (max-width: 999px) {
-body {
-overflow-x: hidden;
-}
-.nav-list {
-position: absolute;
-top: 8vh;
-right: 0;
-width: 50vw;
-height: 92vh;
-background: #3B38A0;
 flex-direction: column;
 align-items: center;
-justify-content: space-around;
-transform: translateX(100%);
-transition: transform 0.3s ease-in;
+justify-content: center;
 }
+h1 {
+ letter-spacing: 5px;
+}
+.pokeContainer {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+margin: 0 auto ;
+max-width: 1200px;
+}
+.pokemon {
+background-color: #eeee;
+border-radius: 10px;
+box-shadow: 0 3px 15px rgb(100, 100, 100, 0.5);
+margin: 10px;
+padding: 20px;
+text-align: center;
+}
+.imgContainer {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: rgba(255, 255, 255, 0.6);
+ border-radius: 50%;
+ width: 120px;
+ height: 120px;
+}
+.imgContainer img{
+max-width: 90%;
+}
+.info {
+ margin-top: 20%;
+}
+.numero {
+ background-color: rgba(0, 0, 0, 0.2);
+ padding: 2px 13px;
+ border-radius: 10px;
+ font-size: 0.8rem;
+}
+.name {
+ margin: 15px 0 7px;
+ letter-spacing: 1.5px;
 }
